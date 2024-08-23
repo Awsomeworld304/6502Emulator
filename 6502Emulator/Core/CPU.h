@@ -24,7 +24,7 @@ class CPU
 		void irq();
 		void nmi();
 		void clock();
-		bool complete(); // Allow step by step execution
+		bool complete(); // Allow step by step execution for fututre debugger.
 
 		// Link CPU to Bus
 		void connectBus(Bus* n) { bus = n; }
@@ -42,7 +42,7 @@ class CPU
 		};
 
 	private:
-		uint8_t GetFlag(Flags f);
+		uint8_t GetFlag(Flags f) const;
 		void SetFlag(Flags f, bool v);
 
 		uint8_t read(uint16_t a);
@@ -108,18 +108,7 @@ class CPU
 		uint8_t ROR();	uint8_t RTI();	uint8_t RTS();	uint8_t SBC(); uint8_t SEC();	uint8_t SED();	uint8_t SEI();	uint8_t STA();
 		uint8_t STX();	uint8_t STY();	uint8_t TAX();	uint8_t TAY(); uint8_t TSX();	uint8_t TXA();	uint8_t TXS();	uint8_t TYA();
 
+		//TODO: Illegal Opcodes
 		// Illegal Opcode (Placeholder)
 		uint8_t IOP();
-
-		// TODO: Implement illegal opcodes.
-		/*
-		// Illegal Opcodes
-		uint8_t ASR();	uint8_t DCP();	uint8_t ISC();	uint8_t LAX();	uint8_t RLA();	uint8_t RRA();	uint8_t SAX();	uint8_t SLO();
-		uint8_t SRE();	uint8_t SKB();	uint8_t SKW();	uint8_t ANC();	uint8_t ALR();	uint8_t ARR();	uint8_t AXS();  uint8_t AHX();
-		uint8_t SHY();	uint8_t SHX();	uint8_t TAS();	uint8_t LAS();	uint8_t DCP();	uint8_t AXA();	uint8_t KIL();  uint8_t HLT();
-		
-		// UNSTABLE ILLEGAL OPCODE
-		uint8_t XAA();
-		*/
-
 };

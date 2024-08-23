@@ -27,35 +27,30 @@
     <ClCompile Include="6502Emulator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Bus.cpp">
+    <ClCompile Include="Core\Bus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RAM.cpp">
+    <ClCompile Include="Core\RAM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CPU.cpp">
+    <ClCompile Include="Core\CPU.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BetterConsole.cpp">
+    <ClCompile Include="Utils\BetterConsole.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Projects\Brents6502\Brents6502\bin\Release\netcoreapp3.0\snake.prg">
-      <Filter>Resource Files\TestProgram</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CPU.h">
+    <ClInclude Include="Core\CPU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Bus.h">
+    <ClInclude Include="Core\Bus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RAM.h">
+    <ClInclude Include="Core\RAM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BetterConsole.h">
+    <ClInclude Include="Utils\BetterConsole.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

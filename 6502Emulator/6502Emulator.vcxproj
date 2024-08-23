@@ -128,19 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="6502Emulator.cpp" />
-    <ClCompile Include="BetterConsole.cpp" />
-    <ClCompile Include="Bus.cpp" />
-    <ClCompile Include="CPU.cpp" />
-    <ClCompile Include="RAM.cpp" />
+    <ClCompile Include="Utils\BetterConsole.cpp" />
+    <ClCompile Include="Core\Bus.cpp" />
+    <ClCompile Include="Core\CPU.cpp" />
+    <ClCompile Include="Core\RAM.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Projects\Brents6502\Brents6502\bin\Release\netcoreapp3.0\snake.prg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BetterConsole.h" />
-    <ClInclude Include="Bus.h" />
-    <ClInclude Include="CPU.h" />
-    <ClInclude Include="RAM.h" />
+    <ClInclude Include="Utils\BetterConsole.h" />
+    <ClInclude Include="Core\Bus.h" />
+    <ClInclude Include="Core\CPU.h" />
+    <ClInclude Include="Core\RAM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

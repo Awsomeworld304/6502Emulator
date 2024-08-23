@@ -13,7 +13,12 @@
 
 using namespace std;
 
-void BetterConsole::Log(const std::string& message)
+void BetterConsole::Log(const string& message)
+{
+	cout << BLUE << message << RESET << endl;
+}
+
+void BetterConsole::Log(const int message)
 {
 	cout << BLUE << message << RESET << endl;
 }
@@ -87,7 +92,7 @@ void BetterConsole::SetTitle(const std::string& title)
 
 BetterConsole::BetterConsole()
 {
-	Log("BetterConsole initialized!");
+	Success("BetterConsole initialized!");
 }
 
 BetterConsole::~BetterConsole()

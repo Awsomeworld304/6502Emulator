@@ -1,0 +1,2 @@
+C:/Users/buche/source/repos/6502Emulator/6502Emulator/out/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/source/repos/6502Emulator/6502Emulator/out/CMakeFiles/ZERO_CHECK.dir
