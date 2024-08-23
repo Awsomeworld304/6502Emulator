@@ -1,4 +1,5 @@
 # 6502Emulator
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Awsomeworld304/6502Emulator)\
 My intro into developing emulators as a whole.
 ## What is this?
 It's a 6502 CPU Emulator with a matching bus and ram and whatnot.\

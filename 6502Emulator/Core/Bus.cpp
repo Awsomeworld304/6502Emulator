@@ -29,7 +29,7 @@ void Bus::write(uint16_t addr, uint8_t data)
 uint8_t Bus::read(uint16_t addr, bool bReadOnly)
 {
 	try {
-		return ram->readRam(addr, bReadOnly);
+		return ram->readRam(addr, bReadOnly); // Err nullptr??
 		//return ram[addr];
 	}
 	catch (uint16_t e) {
